@@ -38,6 +38,12 @@ public class modelShoppingListTest extends TestCase {
     }
 
     public void testGetListItems() {
+        modelItem m=new modelItem("Default");
+        ArrayList<modelItem>read=new ArrayList<>();
+        read.add(m);
+        modelShoppingList s= new modelShoppingList("Default");
+        s.setListItems(read);
+        assertEquals(s.getListItems(),read);
 
     }
 
@@ -57,6 +63,12 @@ public class modelShoppingListTest extends TestCase {
     }
 
     public void testSetListItems() {
+        modelItem m=new modelItem("Default");
+        ArrayList<modelItem>read=new ArrayList<>();
+        read.add(m);
+        modelShoppingList s= new modelShoppingList("Default");
+        s.setListItems(read);
+        assertEquals(s.getListItems(),read);
 
     }
 
